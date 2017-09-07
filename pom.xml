@@ -8,8 +8,8 @@
     <artifactId>etransfer-engine</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>etransfer-dao</module>
         <module>etransfer-domain-model</module>
+        <module>etransfer-dao</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -19,7 +19,6 @@
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>4.12</version>
-                <scope>test</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
