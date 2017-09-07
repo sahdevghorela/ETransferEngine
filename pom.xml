@@ -11,6 +11,7 @@
         <module>etransfer-domain-model</module>
         <module>etransfer-dao</module>
         <module>etransfer-service</module>
+        <module>etransfer-main-app</module>
     </modules>
     <packaging>pom</packaging>
 
