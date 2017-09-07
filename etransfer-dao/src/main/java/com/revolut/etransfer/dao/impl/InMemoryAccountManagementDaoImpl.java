@@ -18,6 +18,7 @@ public class InMemoryAccountManagementDaoImpl implements AccountManagementDao {
     private final ReadWriteLock lock = new ReentrantReadWriteLock();
     private final AtomicLong accountNumberGenerator = new AtomicLong(10);
 
+    @Override
     public Account create(BigDecimal withBalance) {
         long accountNumber = accountNumberGenerator.incrementAndGet();
         Account account = new Account(accountNumber, withBalance);
@@ -25,6 +26,7 @@ public class InMemoryAccountManagementDaoImpl implements AccountManagementDao {
         return account;
     }
 
+    @Override
     public void delete(long accountNumber) {
         try {
             lock.writeLock().lock();
@@ -37,6 +39,7 @@ public class InMemoryAccountManagementDaoImpl implements AccountManagementDao {
         }
     }
 
+    @Override
     public Account find(long accountNumber) {
         try {
             lock.readLock().lock();
@@ -46,6 +49,7 @@ public class InMemoryAccountManagementDaoImpl implements AccountManagementDao {
         }
     }
 
+    @Override
     public void transfer(long fromAccount, long toAccount, BigDecimal amount) {
         try {
             lock.writeLock().lock();
