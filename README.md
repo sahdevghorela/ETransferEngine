@@ -1,7 +1,12 @@
-# ETransferEngine
+# ETransferEngine. 
+  
+# Objective. 
+Design and implement a RESTful API (including data model and the backing implementation) for money
+transfers between internal users/accounts.  
 
-1. To compile project  
-  cd_to_etransfer_parent_project> mvn clean install  
+# Build and Run. 
+1. To compile project   
+  cd_to_etransfer_parent_project> mvn clean install  
 2. To run project and create rest endpoints  
   cd etransfer-main-app   
   mvn exec:java  
