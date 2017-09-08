@@ -9,7 +9,7 @@
   
 # RestEndpoints created with sample requests
 1. Create Account with zero or more balance
- Zero Balance account: http://localhost:7777/revolut/account/create
+ Zero Balance account: http://localhost:7777/revolut/account/create \n
  Account with balance: http://localhost:7777/revolut/account/create?balance=100
 2. Find account
   Find account by account number: http://localhost:7777/revolut/account/find/{accountNumberToFind}
